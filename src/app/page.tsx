@@ -1,6 +1,3 @@
-import Image from 'next/image'
-import Head from 'next/head'
-
 export default function Home() {
   return (
     <main className="flex min-h-screen min-w-screen  flex-col items-center justify-start px-12 py-4 bg-black h-screen w-screen">
@@ -11,10 +8,10 @@ export default function Home() {
       
       <div className='flex flex-col w-full items-center mt-6'>
         <div className='flex flex-row justify-center items-center'>
-            <div className='text-6xl text-white p-2 mb-1'>Hi, this is </div>
-            <div className='text-6xl hero p-2 mb-1'>Zhengzuo(Zachary) Huo</div>
+            <div className='text-6xl text-white p-2 mb-1'>👋 Hi, my name is </div>
+            <div className='text-6xl hero p-2 mb-1'>Zhengzuo Huo</div>
         </div>
-        <div className='text-xl text-white break-words'>I am a software engineer in Sydney, Australia.</div>
+        <div className='text-xl text-white break-words'>You can also call me Zachary. I am a software developer in Sydney, Australia.</div>
       </div>
       
     </main>
