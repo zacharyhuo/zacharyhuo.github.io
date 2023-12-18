@@ -6,9 +6,7 @@ export default function Home() {
 
     return (
         <main className="flex min-h-screen min-w-screen flex-col items-center justify-start px-12 py-4 bg-black h-screen w-screen">
-            <nav
-                className="flex flex-row items-center justify-around max-w-full w-full max-h-[15vh] border-b-2 py-4 px-2"
-            >
+            <nav className="flex flex-row items-center justify-around max-w-full w-full max-h-[15vh] border-b-2 py-4 px-2">
                 <span className="text-2xl text-white handwritten">
                     Zhengzuo Huo
                 </span>
@@ -48,11 +46,11 @@ export default function Home() {
                     am a software developer in Sydney, Australia.
                 </div>
                 <div className="text-xl text-white break-words mb-4">
-                    I'm currently a postgraduate student of Master of Computer
-                    Science in The University of Sydney.
+                    I&#39; m currently a postgraduate student of Master of
+                    Computer Science in The University of Sydney.
                 </div>
                 <div className="text-xl text-white break-words mb-4">
-                    I'm pursuing being a full stack developer and looking
+                    I&#39; m pursuing being a full stack developer and looking
                     forward to start my IT career. 💪
                 </div>
                 <div className="text-xl text-white break-words mb-4">
