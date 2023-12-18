@@ -46,11 +46,11 @@ export default function Home() {
                     am a software developer in Sydney, Australia.
                 </div>
                 <div className="text-xl text-white break-words mb-4">
-                    I&#39; m currently a postgraduate student of Master of
+                    I&#39;m currently a postgraduate student of Master of
                     Computer Science in The University of Sydney.
                 </div>
                 <div className="text-xl text-white break-words mb-4">
-                    I&#39; m pursuing being a full stack developer and looking
+                    I&#39;m pursuing being a full stack developer and looking
                     forward to start my IT career. 💪
                 </div>
                 <div className="text-xl text-white break-words mb-4">
