@@ -46,7 +46,7 @@ export default function Home() {
                     am a software developer in Sydney, Australia.
                 </div>
                 <div className="text-xl text-white break-words mb-4">
-                    I&#39;m currently a postgraduate student pursuing a Master of Computer Science degree<br /> at The University of Sydney.
+                    I&#39;m currently a Master of Computer Science postgraduate student at The University of Sydney.
                 </div>
                 <div className="text-xl text-white break-words mb-4">
                     I&#39;m also pursuing a career as a full-stack developer or a frontend developer. 💪
