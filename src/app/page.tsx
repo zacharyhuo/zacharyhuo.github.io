@@ -5,7 +5,7 @@ import { IoIosDocument } from "react-icons/io";
 export default function Home() {
 
     return (
-        <main className="flex min-h-screen min-w-screen flex-col items-center justify-start px-12 py-4 bg-black h-screen w-screen">
+        <main className="flex min-h-screen min-w-screen flex-col items-center justify-start px-12 py-4 bg-black h-screen w-screen fixed inset-0 overflow-auto">
             <nav className="flex flex-row items-center justify-around max-w-full w-full max-h-[15vh] border-b-2 py-4 px-2">
                 <span className="text-2xl text-white handwritten">
                     Zhengzuo Huo
