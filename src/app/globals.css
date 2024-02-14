@@ -2,7 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Whisper&display=swap');
 
 
 @keyframes gradient {
@@ -29,7 +28,8 @@
 }
 
 .handwritten{
-  font-family: 'Whisper', cursive;
+  font-family: 'Whisper';
+  font-size: 1.8rem;
 }
 
 .nav-item{

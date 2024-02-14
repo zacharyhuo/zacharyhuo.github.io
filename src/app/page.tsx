@@ -35,26 +35,20 @@ export default function Home() {
 
             <div className="flex flex-col w-full items-center justify-center h-full max-h-full">
                 <div className="flex flex-row justify-center items-center mb-8">
-                    <div className="text-6xl text-white p-2 mb-1">
+                    <span className="text-6xl text-white p-2 mb-1">
                         👋 Hi, my name is{" "}
-                    </div>
-                    <div className="text-6xl hero p-2 mb-1">Zhengzuo Huo</div>
+                    </span>
+                    <em className="text-6xl hero p-2 mb-1">Zhengzuo Huo</em>
                 </div>
-                <div className="text-xl text-white break-words mb-4">
+                <div className="text-2xl text-white break-words mb-4 text-center">
                     You can also call me{" "}
-                    <span className="hero font-extrabold">Zachary Huo</span>. I
-                    am a software developer in Sydney, Australia.
-                </div>
-                <div className="text-xl text-white break-words mb-4">
-                    I&#39;m currently a Master of Computer Science postgraduate student at The University of Sydney.
-                </div>
-                <div className="text-xl text-white break-words mb-4">
-                    I&#39;m also pursuing a career as a full-stack developer or a frontend developer. 💪
-                </div>
-                <div className="text-xl text-white break-words mb-4">
-                    For more details about me, please check my resume.
-                </div>
-                <div className="text-xl text-white break-words">
+                    <em className="hero font-extrabold">Zachary Huo </em>. I am
+                    a software developer in Sydney, Australia. <br />
+                    I&#39;m currently a postgraduate student at The University
+                    of Sydney studying computer science. <br />
+                    I&#39;m pursuing a career as a full-stack developer or
+                    a frontend developer. 💪 <br />
+                    For more details about me, please check my resume. <br />
                     Thank you! 🙌
                 </div>
             </div>
