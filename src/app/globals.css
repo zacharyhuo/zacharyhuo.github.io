@@ -2,8 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
-
 @keyframes gradient {
   0% {
     background-position: 0% 50%;
@@ -27,33 +25,46 @@
   animation: gradient 3s ease infinite;
 }
 
-.handwritten{
+.handwritten {
   font-family: 'Whisper';
   font-size: 1.8rem;
 }
 
-.nav-item{
+.nav-item {
   position: relative;
   text-decoration: none;
-  color: rgb(180, 185, 190);
+  transition: color 0.2s ease;
 }
 
-
-.nav-item:hover::after{
-    display: inline;
+.nav-item:hover::after {
+  display: inline;
 }
 
+.nav-item::after {
+  display: none;
+  content: '';
+  position: absolute;
+  z-index: 1;
+  top: 80%;
+  left: -0.1em;
+  right: -0.1em;
+  bottom: 0;
+  transition: display 200ms cubic-bezier(0, 0.8, 0.13, 1);
+  background-color: rgba(70, 125, 161, 0.5);
+  border-radius: 0.25rem;
+}
 
-.nav-item::after{
-    display: none;
-    content: '';
-    position: absolute;
-    z-index: 1;
-    top: 80%;
-    left: -0.1em;
-    right: -0.1em;
-    bottom: 0;
-    transition: display 200ms cubic-bezier(0, 0.8, 0.13, 1);
-    background-color: rgba(70, 125, 161, 0.5);
-    border-radius: 0.25rem;
+@media (max-width: 768px) {
+  .hero {
+    background-size: 150% 100%;
+  }
+
+  .handwritten {
+    font-size: 1.5rem;
+  }
+}
+
+/* 为暗色模式提供平滑过渡 */
+html {
+  transition: color 0.3s, background-color 0.3s;
 }
