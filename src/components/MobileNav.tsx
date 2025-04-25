@@ -55,7 +55,7 @@ export default function MobileNav() {
             {/* 抽屉菜单 */}
             <div
                 ref={drawerRef}
-                className={`fixed top-0 right-0 bottom-0 z-50 w-64 bg-white dark:bg-gray-900 rounded-l-lg transform transition-transform duration-300 ease-in-out ${isOpen ? "translate-x-0" : "translate-x-full"
+                className={`fixed top-0 right-0 bottom-0 z-50 w-64 bg-white dark:bg-gray-900 rounded-l-lg transform transition-transform duration-300 ease-in-out flex flex-col ${isOpen ? "translate-x-0" : "translate-x-full"
                     } md:hidden`}
             >
                 {/* 优化抽屉头部，与导航栏保持完全相同的高度和样式 */}
@@ -72,7 +72,8 @@ export default function MobileNav() {
                     </button>
                 </div>
 
-                <div className="flex flex-col p-4">
+                {/* 主要导航内容 */}
+                <div className="flex-1 overflow-y-auto p-4">
                     <a
                         className="nav-item flex items-center py-3 text-gray-600 dark:text-gray-300 hover:text-black dark:hover:text-white"
                         href="/files/Zhengzuo_Huo_Resume.pdf"
@@ -97,10 +98,11 @@ export default function MobileNav() {
                         <FaGithub className="mr-2" />
                         <span>Github</span>
                     </a>
-                    <div className="mt-4 flex items-center">
-                        <span className="mr-3 text-gray-600 dark:text-gray-300">Switch Theme</span>
-                        <ThemeToggle />
-                    </div>
+                </div>
+
+                {/* 底部固定主题切换 */}
+                <div className="border-t border-gray-100 dark:border-gray-800 py-3 flex justify-center items-center">
+                    <ThemeToggle />
                 </div>
             </div>
         </>
