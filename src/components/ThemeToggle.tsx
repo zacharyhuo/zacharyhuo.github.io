@@ -37,7 +37,7 @@ export default function ThemeToggle() {
             case 'dark':
                 return <FiMoon className="h-5 w-5 text-slate-800 dark:text-white" />;
             case 'system':
-                return <FiMonitor className="h-5 w-5 text-slate-800 dark:text-white" />;
+                return <FiMonitor className="h-5 w-5 text-sky-500" />;
             default:
                 // 默认情况下，回退到根据resolvedTheme显示
                 return resolvedTheme === 'dark'
@@ -72,7 +72,7 @@ export default function ThemeToggle() {
                 className={`flex items-center justify-center rounded-lg p-2 transition-colors hover:bg-gray-200 dark:hover:bg-gray-700 ${theme === 'system' ? 'bg-gray-200 dark:bg-gray-700' : ''}`}
                 onClick={() => setTheme('system')}
             >
-                <FiMonitor className="h-5 w-5 text-slate-800 dark:text-white" />
+                <FiMonitor className="h-5 w-5 text-sky-500" />
             </button>
         </div>
     );
@@ -89,7 +89,7 @@ export default function ThemeToggle() {
             </button>
 
             {isOpen && (
-                <div className="absolute right-0 w-48 rounded-md shadow-lg bg-white dark:bg-gray-800 ring-1 ring-black ring-opacity-5 z-50">
+                <div className="absolute right-0 w-48 rounded-md shadow-[0_0_15px_rgba(0,0,0,0.1)] bg-white dark:bg-gray-800 z-50 mt-0.5">
                     <div className="rounded" role="menu" aria-orientation="vertical">
                         <button
                             className="w-full text-left px-4 py-2 text-sm flex items-center text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-t-md"
@@ -118,7 +118,7 @@ export default function ThemeToggle() {
                                 setIsOpen(false);
                             }}
                         >
-                            <FiMonitor className="mr-3 h-5 w-5 text-slate-800 dark:text-white" />
+                            <FiMonitor className="mr-3 h-5 w-5 text-sky-500" />
                             System
                         </button>
                     </div>

@@ -49,7 +49,7 @@ export default function MobileNav() {
 
             {/* 抽屉背景遮罩 */}
             {isOpen && (
-                <div className="fixed inset-0 z-40 bg-black bg-opacity-50 transition-opacity md:hidden"></div>
+                <div className="fixed inset-0 z-40 bg-black/50 transition-opacity md:hidden"></div>
             )}
 
             {/* 抽屉菜单 */}
